@@ -8,7 +8,18 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "echo \"No tests specified\" && exit 0"
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/**/*.test.js",
+      "!**/node_modules/**"
+    ],
+    "coverageDirectory": "coverage",
+    "coverageReporters": ["text", "lcov", "html"]
   },
   "keywords": [],
   "author": "",
