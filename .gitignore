@@ -21,7 +21,7 @@ backup/
 ~*
 
 # Lock files
-package-lock.json
+# package-lock.json (commented out - we need it for CI)
 
 # Environment files
 .env
