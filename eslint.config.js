@@ -28,4 +28,13 @@ export default defineConfig([
       "no-case-declarations": "warn"  // Convert to warning instead of error
     }
   },
+  // Jest environment for test files
+  {
+    files: ["tests/**/*.js"],
+    languageOptions: {
+      globals: {
+        ...globals.jest
+      }
+    }
+  }
 ]);
