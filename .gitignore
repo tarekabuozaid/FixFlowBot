@@ -1,0 +1,43 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE / Editor
+.vscode/
+*.code-workspace
+.idea/
+
+# OS files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Backup / Temp
+backup/
+*.log
+*.tmp
+~*
+
+# Lock files (optional - أبقي package-lock.json إذا كنت تستخدم npm)
+# package-lock.json
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs
+dist/
+build/
+out/
+
+# Testing
+coverage/
+
+# Others
+*.keystore
+.cache/
